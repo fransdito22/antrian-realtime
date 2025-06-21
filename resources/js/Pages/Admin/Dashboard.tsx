@@ -84,23 +84,6 @@ export default function Dashboard({
             <Head title="Dashboard" />
 
             <main className="max-w-3xl mx-auto p-6">
-                {/* QR Section */}
-                <section className="mb-8 flex flex-col items-center">
-                    <p className="mb-2 text-gray-700 dark:text-gray-300 text-center">
-                        Scan QR ini untuk ambil antrian:
-                    </p>
-                    <img
-                        className="w-48 h-48 rounded-lg border border-gray-300 shadow-md"
-                        src={`https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(
-                            qr
-                        )}&size=200x200`}
-                        alt="QR Code"
-                    />
-                    <p className="mt-2 text-xs text-gray-500 break-words max-w-xs text-center">
-                        {qr}
-                    </p>
-                </section>
-
                 {/* Antrian Sekarang */}
                 <section className="mb-6">
                     <h2 className="text-lg font-semibold mb-2">
